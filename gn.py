@@ -1,9 +1,9 @@
 # 猜數字遊戲
 import random
 r = random.randint(1, 100)
-c = 1
-c = int(c)
+c = 0
 while True:
+	c += 1
 	n = input('請輸入1~100的正整數: ')
 	n = int(n)
 	if n == r:
@@ -14,7 +14,8 @@ while True:
 		print('比答案大')
 	elif n < r:
 		print('比答案小')
-	c = c + 1
+	print('這是你猜的第', c,'次')
+	
 
 
 
