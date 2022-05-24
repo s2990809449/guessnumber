@@ -1,10 +1,14 @@
 # 猜數字遊戲
 import random
-r = random.randint(1, 100)
+s = input('請決定下限(正整數): ')
+s = int(s)
+e = input('請決定上限(正整數): ')
+e = int(e)
+r = random.randint(s, e)
 c = 0
 while True:
 	c += 1
-	n = input('請輸入1~100的正整數: ')
+	n = input('請猜數字: ')
 	n = int(n)
 	if n == r:
 		print('猜對了')
